@@ -12,7 +12,7 @@ Neural or not, the most used protocol for key exchange between two parties A and
 ____
 **Neural Key Exchange Protocol**
 
-The Diffe-Hellman protocol can be implemented using a neural neural network with a single hidden layer (also called a tree parity machine). The number neurons in the hidden layer is denoted as `K` and the number of input neurons per hidden neuron is denoted as 'N'. There is a weight matrix `W` between the input and hidden layers of dimensions `K`x`N` and the range of each weight is `{-L, ..., -2, -1, 0, 1, 2, ..., +L}` where `L` is a parameter of the tree.
+The Diffe-Hellman protocol can be implemented using a neural neural network with a single hidden layer (also called a tree parity machine). The number neurons in the hidden layer is denoted as `K` and the number of input neurons per hidden neuron is denoted as `N`. There is a weight matrix `W` between the input and hidden layers of dimensions `K`x`N` and the range of each weight is `{-L, ..., -2, -1, 0, 1, 2, ..., +L}` where `L` is a parameter of the tree.
 
 ![tpm](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/TreeParityMachine.jpg/350px-TreeParityMachine.jpg)
 
