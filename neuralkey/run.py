@@ -3,7 +3,7 @@ __author_ = "Fariz Rahman"
 from machine import Machine
 import numpy as np
 import time
-
+import sys
 #Machine parameters
 k = 100
 n = 10
@@ -49,15 +49,14 @@ while(not sync):
 
 	sync_history.append(score)
 
-	print ("Synchronization = " + str(score) + " %")
-
+	sys.stdout.write('\r' + "Synchronization = " + str(int(score)) + "%   /  Updates = " + str(nb_updates)) 
 	if score == 100: # If synchronization score is 100%, set sync flag = True
 		sync = True
 
 end_time = time.time()
 time_taken = end_time - start_time
 
-print ('Machines have been synchronized.')
+print ('\nMachines have been synchronized.')
 print ('Time taken = ' + str(time_taken)+ " seconds.")
 print ('Updates = ' + str(nb_updates) + ".")
 
