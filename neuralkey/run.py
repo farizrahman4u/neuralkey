@@ -22,7 +22,7 @@ machine2 = Machine(k, n, l)
 
 #Random number generator
 def random():
-	return np.random.randint(-l, l, [k, n])
+	return np.random.randint(-l, l + 1, [k, n])
 
 #Function to evaluate the synchronization score between two machines.
 def sync_score(m1, m2):
