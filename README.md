@@ -13,7 +13,15 @@ ____
 **Neural Key Exchange Protocol**
 
 The Diffe-Hellman protocol can be implemented using a neural neural network with a single hidden layer (also called a tree parity machine). The number neurons in the hidden layer is denoted as `K` and the number of input neurons per hidden neuron is denoted as 'N'. There is a weight matrix `W` between the input and hidden layers of dimensions `K`x`N` and the range of each weight is `{-L, ..., -2, -1, 0, 1, 2, ..., +L}` where `L` is a parameter of the tree.
+___
 
+#TODO
+* Simulate Eve and man in the middle attack
+* Improve visualization
+
+___
+
+#Bye!!
 ![tpm](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/TreeParityMachine.jpg/350px-TreeParityMachine.jpg)
 
 Both Bob and Alice posses tree parity machines with same set of parameters (`K`, `N` and `L`). The weights of their machines are different, as they are randomly initialized. If they could synchronize the weights of their machines (without transferring the actual weights, ofcourse) they could then use those weights as a cryptographic key for the rest of their communication. The following algorithm is used to synchronize the weight matrices of Bob's and Alice's machines:
