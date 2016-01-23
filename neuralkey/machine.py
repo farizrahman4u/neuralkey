@@ -53,7 +53,7 @@ class Machine:
 		Updates the weights according to the specified update rule.
 
 		Arguments:
-		tau2 - Output bit from the other machine;'
+		tau2 - Output bit from the other machine;
 
 		update_rule - The update rule. 
 		Should be one of ['hebbian', 'anti_hebbian', random_walk']
