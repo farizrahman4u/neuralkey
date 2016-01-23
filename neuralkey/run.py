@@ -4,6 +4,7 @@ from machine import Machine
 import numpy as np
 import time
 import sys
+
 #Machine parameters
 k = 100
 n = 10
@@ -33,6 +34,7 @@ sync = False # Flag to check if weights are sync
 nb_updates = 0 # Update counter
 start_time = time.time() # Start time
 sync_history = [] # to store the sync score after every update
+
 while(not sync):
 
 	X = random() # Create random vector of dimensions [k, n]
@@ -47,20 +49,21 @@ while(not sync):
 
 	score = 100 * sync_score(machine1, machine2) # Calculate the synchronization of the 2 machines
 
-	sync_history.append(score)
+	sync_history.append(score) # Add sync score to history, so that we can plot a graph later.
 
 	sys.stdout.write('\r' + "Synchronization = " + str(int(score)) + "%   /  Updates = " + str(nb_updates)) 
 	if score == 100: # If synchronization score is 100%, set sync flag = True
 		sync = True
 
 end_time = time.time()
-time_taken = end_time - start_time
+time_taken = end_time - start_time # Calculate time taken
 
+#Print results
 print ('\nMachines have been synchronized.')
 print ('Time taken = ' + str(time_taken)+ " seconds.")
 print ('Updates = ' + str(nb_updates) + ".")
 
-# Plot graph 
+#Plot graph 
 import matplotlib.pyplot as mpl
 mpl.plot(sync_history)
 mpl.show()
