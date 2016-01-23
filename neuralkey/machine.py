@@ -22,7 +22,7 @@ class Machine:
 		self.k = k
 		self.n = n
 		self.l = l
-		self.W = np.random.randint(-l, l, [k, n])
+		self.W = np.random.randint(-l, l + 1, [k, n])
 
 	def get_output(self, X):
 		'''
