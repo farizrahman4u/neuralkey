@@ -49,7 +49,7 @@ ___
 
 # The Code
 
-The code is heavily documented. It consists of 3 files, `machine.py`, which defines a tree parity machine, `update_rules.py`, which contains functions for all the three update rules and `run.py` which simple creates 2 machines with default parameters and try to sync them.
+The code is heavily documented. It consists of 4 files, `machine.py`, which defines a tree parity machine, `update_rules.py`, which contains functions for all the three update rules, `run.py` which simple creates 2 machines with default parameters and try to sync them and `eve.py` which is similar to `run.py`, except that nosy Eve will be trying to sync her machine with Alice's and Bob's. Will she get what she wants? 
 
 **Installation**
 
@@ -57,6 +57,7 @@ The code is heavily documented. It consists of 3 files, `machine.py`, which defi
 sudo git clone http://www.github.com/farizrahman4u/neuralkey.git
 cd neuralkey/neuralkey
 python run.py
+python eve.py
 ```
 
 **Requirements**
