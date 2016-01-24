@@ -60,7 +60,7 @@ while(not sync):
 
 	sync_history.append(score) # Add sync score to history, so that we can plot a graph later.
 
-	sys.stdout.write('\r' + "Synchronization = " + str(int(score)) + "%   /  Updates = " + str(nb_updates) + "/ Eve's updates = " + str(nb_eve_updates)) 
+	sys.stdout.write('\r' + "Synchronization = " + str(int(score)) + "%   /  Updates = " + str(nb_updates) + " / Eve's updates = " + str(nb_eve_updates)) 
 	if score == 100: # If synchronization score is 100%, set sync flag = True
 		sync = True
 
