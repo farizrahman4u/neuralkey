@@ -55,7 +55,7 @@ The code is heavily documented. It consists of 3 files, `machine.py`, which defi
 
 ```
 sudo git clone http://www.github.com/farizrahman4u/neuralkey.git
-cd neuralkey
+cd neuralkey/neuralkey
 python run.py
 ```
 
